@@ -288,10 +288,10 @@
 
         media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &rgb_ef     &rgb_br            &rgb_hue      &rgb_sat    &rgb_ug RGB_TOG
-&trans  &trans  &trans  &trans  &trans    &kp K_PREV  &kp K_VOLUME_DOWN  &kp K_VOL_UP  &kp K_NEXT  &trans
-&trans  &trans  &trans  &trans  &trans    &kp K_MUTE  &kp K_PP           &none         &none       &sys_reset
-&trans  &trans                                                                         &trans      &trans
+&trans  &trans  &trans  &trans  &trans    &rgb_ef     &rgb_br            &rgb_hue         &rgb_sat    &rgb_ug RGB_TOG
+&trans  &trans  &trans  &trans  &trans    &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &trans
+&trans  &trans  &trans  &trans  &trans    &kp C_MUTE  &kp C_PP           &none            &none       &sys_reset
+&trans  &trans                                                                            &trans      &trans
             >;
 
             label = "media";
