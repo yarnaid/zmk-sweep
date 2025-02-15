@@ -214,7 +214,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             flavor = "tap-preferred";
-            quick-tap-ms = <0>;
+            quick-tap-ms = <(-1)>;
         };
 
         hrm_right: hrm_right {
@@ -225,7 +225,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             flavor = "tap-preferred";
-            quick-tap-ms = <0>;
+            quick-tap-ms = <(-1)>;
         };
     };
 
