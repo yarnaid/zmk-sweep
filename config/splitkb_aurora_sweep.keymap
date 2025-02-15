@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 &led_strip {
     // chain-length = <6>;
@@ -33,6 +34,44 @@
             timeout-ms = <50>;
             key-positions = <10 11>;
             bindings = <&kp TAB>;
+        };
+    };
+
+    behaviors {
+        rgb_ef: rgb_ef {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB_EF";
+            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rgb_br: rgb_br {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB_BR";
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rgb_sat: rgb_sat {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB_SAT";
+            bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rgb_hue: rgb_hue {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB_HUE";
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -68,7 +107,7 @@
 
         media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans      &trans             &trans        &trans      &trans
+&trans  &trans  &trans  &trans  &trans    &rgb_ef     &rgb_br            &rgb_hue      &rgb_sat    &rgb_ug RGB_TOG
 &trans  &trans  &trans  &trans  &trans    &kp K_PREV  &kp K_VOLUME_DOWN  &kp K_VOL_UP  &kp K_NEXT  &trans
 &trans  &trans  &trans  &trans  &trans    &trans      &kp K_PLAY_PAUSE   &trans        &trans      &trans
 &trans  &trans                                                                         &trans      &trans
