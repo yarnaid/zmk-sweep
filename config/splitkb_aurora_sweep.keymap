@@ -222,9 +222,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <100>;
-            flavor = "tap-unless-interrupted";
-            quick-tap-ms = <200>;
-            hold-trigger-key-positions = <16 17 18 19>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
         };
 
         hrm_right: hrm_right {
@@ -234,9 +233,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <100>;
-            flavor = "tap-unless-interrupted";
-            quick-tap-ms = <200>;
-            hold-trigger-key-positions = <13 12 11 10>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
         };
     };
 
