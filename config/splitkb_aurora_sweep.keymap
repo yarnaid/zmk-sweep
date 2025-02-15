@@ -218,13 +218,25 @@
         hrm_left: hrm_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_LEFT";
-            bindings = <&none>, <&none>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             flavor = "tap-unless-interrupted";
             quick-tap-ms = <200>;
             hold-trigger-key-positions = <16 17 18 19>;
+        };
+
+        hrm_right: hrm_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            flavor = "tap-unless-interrupted";
+            quick-tap-ms = <200>;
+            hold-trigger-key-positions = <13 12 11 10>;
         };
     };
 
@@ -256,10 +268,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W        &kp F  &kp P  &kp B    &kp J  &kp L  &kp U      &kp Y        &kp SINGLE_QUOTE
-&kp A       &kp R        &kp S  &kp T  &kp G    &kp M  &kp N  &kp E      &kp I        &kp O
-&kp Z       &kp X        &kp C  &kp D  &kp V    &kp K  &kp H  &kp COMMA  &kp DOT      &kp FSLH
-&lt 4 LGUI  &lt 3 SPACE                                                  &lt 2 ENTER  &lt 1 BACKSPACE
+&kp Q             &kp W             &kp F              &kp P              &kp B    &kp J  &kp L               &kp U               &kp Y              &kp SINGLE_QUOTE
+&hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S  &hrm_left LSHFT T  &kp G    &kp M  &hrm_right RSHFT N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O
+&kp Z             &kp X             &kp C              &kp D              &kp V    &kp K  &kp H               &kp COMMA           &kp DOT            &kp FSLH
+&lt 4 LGUI        &lt 3 SPACE                                                                                                     &lt 2 ENTER        &lt 1 BACKSPACE
             >;
 
             label = "base";
