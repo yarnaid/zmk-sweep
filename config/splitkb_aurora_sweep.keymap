@@ -73,8 +73,73 @@
         };
 
         del {
-            bindings = <&kp DEL>;
+            bindings = <&lt 3 DEL>;
             key-positions = <32 33>;
+        };
+
+        studio {
+            bindings = <&studio_unlock>;
+            key-positions = <30 31 32 33>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <16 17>;
+        };
+
+        eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <13 12>;
+        };
+
+        exlamation {
+            bindings = <&kp EXCL>;
+            key-positions = <0 10>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <1 11>;
+        };
+
+        sharp {
+            bindings = <&kp HASH>;
+            key-positions = <2 12>;
+        };
+
+        usd {
+            bindings = <&kp DOLLAR>;
+            key-positions = <3 13>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <4 14>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <5 15>;
+        };
+
+        amprs {
+            bindings = <&kp AMPS>;
+            key-positions = <6 16>;
+        };
+
+        star {
+            bindings = <&kp STAR>;
+            key-positions = <7 17>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <8 18>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <9 19>;
         };
     };
 
@@ -141,8 +206,8 @@
         numbers {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &kp LS(PLUS)
-&trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp EQUAL
-&trans  &trans  &trans  &trans  &trans    &kp N0  &kp N1  &kp N2  &kp N3  &kp MINUS
+&trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp N0
+&trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp MINUS
 &trans  &trans                                                    &trans  &trans
             >;
         };
@@ -158,10 +223,10 @@
 
         media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &rgb_ef     &rgb_br                   &rgb_hue                  &rgb_sat    &rgb_ug RGB_TOG
-&trans  &trans  &trans  &trans  &trans    &kp K_PREV  &kp K_VOLUME_DOWN         &kp K_VOL_UP              &kp K_NEXT  &trans
-&trans  &trans  &trans  &trans  &trans    &kp K_PP    &bt_switch BT_CLR BT_NXT  &bt_switch BT_CLR BT_PRV  &trans      &trans
-&trans  &trans                                                                                            &trans      &trans
+&trans  &trans  &trans  &trans  &trans    &rgb_ef     &rgb_br            &rgb_hue                  &rgb_sat                  &rgb_ug RGB_TOG
+&trans  &trans  &trans  &trans  &trans    &kp K_PREV  &kp K_VOLUME_DOWN  &kp K_VOL_UP              &kp K_NEXT                &trans
+&trans  &trans  &trans  &trans  &trans    &kp K_MUTE  &kp K_PP           &bt_switch BT_CLR BT_NXT  &bt_switch BT_CLR BT_PRV  &trans
+&trans  &trans                                                                                     &trans                    &trans
             >;
         };
 
