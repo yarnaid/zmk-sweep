@@ -212,7 +212,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <5000>;
+            tapping-term-ms = <3000>;
         };
 
         hrm_left: hrm_left {
