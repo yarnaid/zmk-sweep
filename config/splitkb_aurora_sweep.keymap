@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -205,16 +204,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bt_switch: bt_switch {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BT_SWITCH";
-            bindings = <&bt>, <&bt>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <3000>;
-        };
-
         hrm_left: hrm_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_LEFT";
@@ -299,10 +288,10 @@
 
         media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &rgb_ef     &rgb_br            &rgb_hue                  &rgb_sat                  &rgb_ug RGB_TOG
-&trans  &trans  &trans  &trans  &trans    &kp K_PREV  &kp K_VOLUME_DOWN  &kp K_VOL_UP              &kp K_NEXT                &trans
-&trans  &trans  &trans  &trans  &trans    &kp K_MUTE  &kp K_PP           &bt_switch BT_CLR BT_NXT  &bt_switch BT_CLR BT_PRV  &sys_reset
-&trans  &trans                                                                                     &trans                    &trans
+&trans  &trans  &trans  &trans  &trans    &rgb_ef     &rgb_br            &rgb_hue      &rgb_sat    &rgb_ug RGB_TOG
+&trans  &trans  &trans  &trans  &trans    &kp K_PREV  &kp K_VOLUME_DOWN  &kp K_VOL_UP  &kp K_NEXT  &trans
+&trans  &trans  &trans  &trans  &trans    &kp K_MUTE  &kp K_PP           &none         &none       &sys_reset
+&trans  &trans                                                                         &trans      &trans
             >;
 
             label = "media";
