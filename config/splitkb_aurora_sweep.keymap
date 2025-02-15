@@ -35,6 +35,36 @@
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
+
+        l-br {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <3 4>;
+        };
+
+        r-br {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <5 6>;
+        };
+
+        l-par {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <13 14>;
+        };
+
+        r-par {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <15 16>;
+        };
+
+        l-brc {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <23 24>;
+        };
+
+        r-brc {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <25 26>;
+        };
     };
 
     behaviors {
