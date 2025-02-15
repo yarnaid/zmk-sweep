@@ -65,5 +65,14 @@
 &trans  &trans                                                                &trans     &trans
             >;
         };
+
+        media {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans      &trans             &trans        &trans      &trans
+&trans  &trans  &trans  &trans  &trans    &kp K_PREV  &kp K_VOLUME_DOWN  &kp K_VOL_UP  &kp K_NEXT  &trans
+&trans  &trans  &trans  &trans  &trans    &trans      &kp K_PLAY_PAUSE   &trans        &trans      &trans
+&trans  &trans                                                                         &trans      &trans
+            >;
+        };
     };
 };
