@@ -214,6 +214,18 @@
             flavor = "tap-preferred";
             tapping-term-ms = <5000>;
         };
+
+        hrm_left: hrm_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_LEFT";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            flavor = "tap-unless-interrupted";
+            quick-tap-ms = <200>;
+            hold-trigger-key-positions = <16 17 18 19>;
+        };
     };
 
     macros {
@@ -249,6 +261,8 @@
 &kp Z       &kp X        &kp C  &kp D  &kp V    &kp K  &kp H  &kp COMMA  &kp DOT      &kp FSLH
 &lt 4 LGUI  &lt 3 SPACE                                                  &lt 2 ENTER  &lt 1 BACKSPACE
             >;
+
+            label = "base";
         };
 
         numbers {
@@ -258,6 +272,8 @@
 &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp MINUS
 &trans  &trans                                                    &trans  &trans
             >;
+
+            label = "num";
         };
 
         nav {
@@ -267,6 +283,8 @@
 &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans
 &trans  &trans                                                                &trans     &trans
             >;
+
+            label = "nav";
         };
 
         media {
@@ -276,6 +294,8 @@
 &trans  &trans  &trans  &trans  &trans    &kp K_MUTE  &kp K_PP           &bt_switch BT_CLR BT_NXT  &bt_switch BT_CLR BT_PRV  &sys_reset
 &trans  &trans                                                                                     &trans                    &trans
             >;
+
+            label = "media";
         };
 
         f-layer {
@@ -285,6 +305,8 @@
 &trans  &kp F1  &kp F2  &kp F3  &kp F10    &trans  &trans  &trans  &trans  &trans
 &trans  &trans                                                     &trans  &trans
             >;
+
+            label = "fn";
         };
     };
 };
