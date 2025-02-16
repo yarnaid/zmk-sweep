@@ -206,19 +206,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        hrm_left: hrm_left {
+        hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_LEFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-        };
-
-        hrm_right: hrm_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM_RIGHT";
+            label = "HRM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -255,10 +245,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W             &kp F              &kp P              &kp B    &kp J  &kp L               &kp U               &kp Y              &kp SINGLE_QUOTE
-&hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S  &hrm_left LSHFT T  &kp G    &kp M  &hrm_right RSHFT N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O
-&kp Z             &kp X             &kp C              &kp D              &kp V    &kp K  &kp H               &kp COMMA           &kp DOT            &kp FSLH
-&lt 4 LGUI        &lt 3 SPACE                                                                                                     &lt 2 ENTER        &lt 1 BACKSPACE
+&kp Q        &kp W        &kp F         &kp P         &kp B    &kp J  &kp L         &kp U         &kp Y        &kp SINGLE_QUOTE
+&hrm LGUI A  &hrm LALT R  &hrm LCTRL S  &hrm LSHFT T  &kp G    &kp M  &hrm RSHFT N  &hrm RCTRL E  &hrm RALT I  &hrm RGUI O
+&kp Z        &kp X        &kp C         &kp D         &kp V    &kp K  &kp H         &kp COMMA     &kp DOT      &kp FSLH
+&lt 4 LGUI   &lt 3 SPACE                                                                          &lt 2 ENTER  &lt 1 BACKSPACE
             >;
 
             label = "base";
