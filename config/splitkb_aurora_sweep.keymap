@@ -288,7 +288,7 @@
 
         media {
             bindings = <
-&bt BT_CLR    &trans        &trans        &out OUT_TOG  &soft_off       &rgb_ef     &rgb_br            &rgb_hue         &rgb_sat    &rgb_ug RGB_TOG
+&bt BT_CLR    &trans        &trans        &out OUT_TOG  &sys_reset      &rgb_ef     &rgb_br            &rgb_hue         &rgb_sat    &rgb_ug RGB_TOG
 &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &trans          &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &trans
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_MUTE  &kp C_PP           &none            &none       &sys_reset
 &trans        &trans                                                                                                    &trans      &trans
