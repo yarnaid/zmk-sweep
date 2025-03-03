@@ -154,7 +154,7 @@
 &trans    &trans                                                                        &trans         &trans
             >;
 
-            label = "num";
+            label = "num-sym";
         };
 
         sys {
@@ -173,8 +173,8 @@
         compatible = "zmk,conditional-layers";
 
         sys {
-            if-layers = <1>;
-            then-layer = <2>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
