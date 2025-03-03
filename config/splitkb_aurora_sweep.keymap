@@ -132,10 +132,10 @@
 
         base {
             bindings = <
-&mt TILDE Q  &kp W        &kp E        &kp R        &kp T    &kp Y  &kp U        &kp I        &kp O        &kp P
-&mt LGUI A   &mt LALT S   &mt LCTRL D  &mt LSHFT F  &kp G    &kp H  &mt RSHFT J  &mt RCTRL K  &mt LALT L   &mt RGUI SEMI
-&kp Z        &kp X        &kp C        &kp V        &kp B    &kp N  &kp M        &kp COMMA    &kp DOT      &mt BACKSLASH FSLH
-&kp TAB      &lt 2 SPACE                                                                      &lt 1 ENTER  &kp BACKSPACE
+&mt TILDE Q  &kp W        &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I         &kp O        &kp P
+&hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrm LSHFT F  &kp G    &kp H  &hrm RSHFT J  &hrm RCTRL K  &hrm LALT L  &hrm RGUI SEMI
+&kp Z        &kp X        &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA     &kp DOT      &mt BACKSLASH FSLH
+&kp TAB      &lt 2 SPACE                                                                          &lt 1 ENTER  &kp BACKSPACE
             >;
 
             label = "base";
@@ -143,10 +143,10 @@
 
         nav-fn-media {
             bindings = <
-&kp F1          &kp F2      &kp F3        &kp F4        &kp F5      &kp F6        &kp F7        &kp F8      &mt F11 F9     &mt F12 F10
-&kp C_PREVIOUS  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP    &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &trans
-&trans          &trans      &trans        &trans        &trans      &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp RC(RIGHT)  &trans
-&trans          &trans                                                                                      &trans         &trans
+&kp F1                &kp F2            &kp F3                    &kp F4                   &kp F5      &kp F6        &kp F7           &kp F8               &mt F11 F9       &mt F12 F10
+&hrm LCMD C_PREVIOUS  &hrm LALT C_NEXT  &hrm LCTRL C_VOLUME_DOWN  &hrm LSHIFT C_VOLUME_UP  &kp C_PP    &kp LEFT      &hrm RSHFT DOWN  &hrm RCTRL UP_ARROW  &hrm LALT RIGHT  &trans
+&trans                &trans            &trans                    &trans                   &trans      &kp LC(LEFT)  &kp LC(DOWN)     &kp LC(UP)           &kp RC(RIGHT)    &trans
+&trans                &trans                                                                                                                               &trans           &trans
             >;
 
             label = "nav-fn-media";
@@ -154,10 +154,10 @@
 
         num-sym {
             bindings = <
-&kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR       &kp RPAR
-&kp N1    &kp N2  &kp N3    &kp N4      &kp N5         &kp MINUS  &kp EQUAL  &kp GRAVE  &kp BACKSLASH  &kp SINGLE_QUOTE
-&kp N6    &kp N7  &kp N8    &kp N9      &kp N0         &kp UNDER  &kp PLUS   &kp TILDE  &kp PIPE       &kp DOUBLE_QUOTES
-&trans    &trans                                                                        &kp DOT        &trans
+&kp EXCL      &kp AT        &kp HASH       &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPS           &kp STAR          &kp LPAR             &kp RPAR
+&hrm LCMD N1  &hrm LALT N2  &hrm LCTRL N3  &hrm LSHIFT N4  &kp N5         &kp MINUS  &hrm LSHIFT EQUAL  &hrm RCTRL GRAVE  &hrm LALT BACKSLASH  &hrm RCMD SINGLE_QUOTE
+&kp N6        &kp N7        &kp N8         &kp N9          &kp N0         &kp UNDER  &kp PLUS           &kp TILDE         &kp PIPE             &kp DOUBLE_QUOTES
+&trans        &trans                                                                                                      &kp DOT              &trans
             >;
 
             label = "num-sym";
